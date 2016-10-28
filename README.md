@@ -18,7 +18,7 @@ To build the shared library:
 make build
 ```
 
-Then to test (requires at least five GPUs): 
+Then to test (requires at least two GPUs): 
 ```
 make test 
 ```
