@@ -1,7 +1,7 @@
 .PHONY: default
 default: build test clean
 
-PYTHON = python3.3
+PYTHON = python
 PYTHON_CONFIG = ${PYTHON} python-config
 
 
