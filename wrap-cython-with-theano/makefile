@@ -24,7 +24,7 @@ helloworld${SO}: helloworld.c
 
 MPIEXEC = mpiexec
 NP_FLAG = -n
-NP = 5
+NP = 2
 .PHONY: test
 test: build
 	${MPIEXEC} ${NP_FLAG} ${NP} ${PYTHON} test.py
