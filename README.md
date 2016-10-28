@@ -3,7 +3,7 @@ Theano + Cuda-enabled MPI, without pycuda via Cython
 
 A simple example code to use MPI on Theano. No need to use PyCUDA.
 
-## Tested with:
+## Tested with
 * Centos 6.7
 * 8 Nvidia GTX 980 GPUs
 * Python 3.3
@@ -12,3 +12,20 @@ A simple example code to use MPI on Theano. No need to use PyCUDA.
 * OpenMPI 1.10, CUDA-enabled compilation
 * mpi4py 2.0.0
 
+## How to use
+To build the shared library:
+```
+make build
+```
+
+Then to test (requires at least five GPUs): 
+```
+make test 
+```
+
+or: 
+```
+mpirun -np <number of threads> python test.py
+```
+number of threads can be any number of threads/GPUs you want to use. 
+`test.py` is set up in a way that each thread uses one separate GPU.
