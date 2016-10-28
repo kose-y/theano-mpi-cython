@@ -11,6 +11,7 @@ A simple example code to use MPI on Theano. No need to use PyCUDA.
 * Theano 0.9.0dev3.dev-138f48ae02611808091a5778ed1228a8b20c40a5
 * OpenMPI 1.10, CUDA-enabled compilation
 * mpi4py 2.0.0
+* numpy 1.11.2 (only for testing)
 
 ## How to use
 To build the shared library:
